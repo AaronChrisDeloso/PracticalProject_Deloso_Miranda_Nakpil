@@ -10,7 +10,7 @@ namespace PracticalProject
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new View.LandingPage());
         }
 
         protected override void OnStart()

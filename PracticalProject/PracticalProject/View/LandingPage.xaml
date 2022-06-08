@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticalProject.View.LandingPage">
+
+    <ContentPage BackgroundImageSource="kangaroo">
+        <ContentPage.Content >
+            <StackLayout>
+                <Frame HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="15" Opacity=".5" CornerRadius="15" BackgroundColor="LightBlue">
+                    <Label Text='"We all have a responsibility to protect endangered species, both for their sake and for the sake of our own future generations." 
+                           – Loretta Lynch'
+               FontSize="25" Margin="10" FontAttributes="Italic" TextColor="Black" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+                </Frame >
+                <Button Clicked="AnimalPage" Text="Login Page" FontSize="15" BackgroundColor="LightBlue" CornerRadius="25" VerticalOptions="EndAndExpand" Margin="30,0,30,20" Opacity=".9" />
+
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    
+    <ContentPage BackgroundImageSource="rhino">
+        <ContentPage.Content >
+            <StackLayout>
+                <Frame HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="15" Opacity=".5" CornerRadius="15" BackgroundColor="LightBlue" >
+                    <Label Text="99% of currently threatened species are at risk from human activities, primarily those driving habitat loss, introduction of exotic species, and global warming"
+               FontSize="25" Margin="10" FontAttributes="Italic" TextColor="Black" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+                </Frame >
+                <Button Clicked="AnimalPage" Text="Login Page" FontSize="15" BackgroundColor="LightBlue" CornerRadius="25" VerticalOptions="EndAndExpand" Margin="30,0,30,20" Opacity=".9" />
+
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+   
+
+    <ContentPage BackgroundImageSource="giraffe">
+        <ContentPage.Content>
+            <StackLayout>
+                <Frame HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="15" Opacity=".5" CornerRadius="15" BackgroundColor="LightBlue">
+                <Label Text="A species is defined as endangered or threatened when it is suffers from these factors: damage to its habitat for recreational, or entertainment purposes; disease or predation of the species; and hazards to the continued life of the species"
+               FontSize="25" Margin="10" FontAttributes="Italic" TextColor="Black" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+                </Frame >
+                <Button Clicked="AnimalPage" Text="Login Page" FontSize="15" BackgroundColor="LightBlue" CornerRadius="25" VerticalOptions="EndAndExpand" Margin="30,0,30,20" Opacity=".9" />
+
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage BackgroundImageSource="elephants">
+        <ContentPage.Content >
+            <StackLayout>
+                <Frame HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="15" Opacity=".5" CornerRadius="15" BackgroundColor="LightBlue" >
+                    <Label Text="A species is declared extinct after many years of not being spotted. Because it takes so long to define an entire species as extinct, it is probable that there are many species already gone that we are unaware of."
+               FontSize="25" Margin="10" FontAttributes="Italic" TextColor="Black" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+                </Frame >
+                <Button Clicked="AnimalPage" Text="Login Page" FontSize="15" BackgroundColor="LightBlue" CornerRadius="25" VerticalOptions="EndAndExpand" Margin="30,0,30,20" Opacity=".9" />
+
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    
+    <ContentPage BackgroundImageSource="dolphin">
+        <ContentPage.Content >
+            <StackLayout>
+                <Frame HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="15" Opacity=".5" CornerRadius="15" BackgroundColor="LightBlue" >
+                    <Label Text="Extinction is a natural phenomenon, it occurs at a natural “background” rate of about one to five species per year. Scientists estimate we’re now losing species at 1,000 to 10,000 times the “background” rate, with dozens going extinct every day."
+               FontSize="25" Margin="10" FontAttributes="Italic" TextColor="Black" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+                </Frame >
+                <Button Clicked="AnimalPage" Text="Login Page" FontSize="15" BackgroundColor="LightBlue" CornerRadius="25" VerticalOptions="EndAndExpand" Margin="30,0,30,20" Opacity=".9" />
+
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    
+
+
+</CarouselPage>

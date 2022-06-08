@@ -4,13 +4,13 @@
              x:Class="PracticalProject.MainPage"
              BackgroundImageSource="kangaroo">
 
-    <StackLayout>
+    <StackLayout >
         <Label Text='"We all have a responsibility to protect endangered species,
                both for their sake and for the sake of our own future generations." 
                  '
-               FontSize="Large" Margin="21,30,10,1" FontAttributes="Italic" FontFamily="Open Sans"/>
+               FontSize="Large" Margin="21,30,10,1" FontAttributes="Italic"/>
         <Label Text=' – Loretta Lynch' HorizontalTextAlignment="End"
-               FontSize="Large" Margin="1,1,10,1" FontAttributes="Italic" FontFamily="Open Sans"/>
+               FontSize="Large" Margin="1,1,10,1" FontAttributes="Italic"/>
 
         <Button Clicked="AnimalPage" Text="Login Page" BackgroundColor="LightBlue" CornerRadius="25" VerticalOptions="EndAndExpand"/>
 
