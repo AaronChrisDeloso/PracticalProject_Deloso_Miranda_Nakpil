@@ -16,7 +16,7 @@ namespace PracticalProject
         }
         private async void AnimalPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new View.ShowAnimalPage());
+            await Navigation.PushAsync(new View.LoginPage());
 
         }
     }

@@ -1,77 +1,75 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PracticalProject.View.ShowAnimalPage">
+             x:Class="PracticalProject.View.ShowAnimalPage"
+             Title="Endangered Species"
+             BackgroundImageSource="tiger">
     <ContentPage.Content>
         <StackLayout Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <Button Text="Add New Animal" x:Name="btnAddRecord" HorizontalOptions="Start" Clicked="btnAddRecord_Clicked"/>
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"></RowDefinition>
-
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="180"></ColumnDefinition>
+                    <ColumnDefinition Width="180"></ColumnDefinition>
+
                 </Grid.ColumnDefinitions>
-                <Label Text="Animal Code" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0"/>
-                <Label Text="Initial Identification " FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="1"/>
-                <Label Text="Animal Kingdom " FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="2"/>
-                <Label Text="Animal Class" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="3"/>
-                <Label Text="Animal Family" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="4"/>
-                <Label Text="Genus" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="5"/>
-                <Label Text="Scientific Name " FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="6"/>
-                <Label Text="Taxonomy " FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="7"/>
-                <Label Text="Characteristics " FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="8"/>
-                <Label Text="Habitat" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="9"/>
-                <Label Text="Threats" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="10"/>
-                <Label Text="Conservation" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="11"/>
+                <Label Text="Endangered Species" TextColor="White" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontSize="Medium" Grid.Row="0" Grid.Column="0"/>
+                <Button Text="Add New Species" x:Name="btnAddRecord" HorizontalOptions="End" Clicked="btnAddRecord_Clicked"  CornerRadius="15" Grid.Row="0" Grid.Column="1" BackgroundColor="	#c0ffef"/>
             </Grid>
+
+
             <ListView x:Name="lstData" HasUnevenRows="True" ItemSelected="lstData_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Frame HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <Frame HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="15" Opacity=".9" CornerRadius="15" BackgroundColor="	#c0ffef" >
                                 <Grid>
                                     <Grid.RowDefinitions>
-                                        <RowDefinition Height="Auto"></RowDefinition>
+                                        <RowDefinition Height="25"></RowDefinition>
+                                        <RowDefinition Height="25"></RowDefinition>
+                                        <RowDefinition Height="25"></RowDefinition>
+                                        <RowDefinition Height="25"></RowDefinition>
+                                        <RowDefinition Height="25"></RowDefinition>
+                                        <RowDefinition Height="25"></RowDefinition>
+                                        <RowDefinition Height="25"></RowDefinition>
+                                        <RowDefinition Height="25"></RowDefinition>
+                                        <RowDefinition Height="25"></RowDefinition>
+                                        <RowDefinition Height="25"></RowDefinition>
+                                        <RowDefinition Height="25"></RowDefinition>
+                                        <RowDefinition Height="25"></RowDefinition>
                                     </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition></ColumnDefinition>
-                                        <ColumnDefinition></ColumnDefinition>
-                                        <ColumnDefinition></ColumnDefinition>
-                                        <ColumnDefinition></ColumnDefinition>
-                                        <ColumnDefinition></ColumnDefinition>
-                                        <ColumnDefinition></ColumnDefinition>
-                                        <ColumnDefinition></ColumnDefinition>
-                                        <ColumnDefinition></ColumnDefinition>
-                                        <ColumnDefinition></ColumnDefinition>
-                                        <ColumnDefinition></ColumnDefinition>
-                                        <ColumnDefinition></ColumnDefinition>
-                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition Width="125"></ColumnDefinition>
+                                        <ColumnDefinition Width="170"></ColumnDefinition>
+               
                                     </Grid.ColumnDefinitions>
-                                    <Label Text="{Binding AnimalCode}" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0"/>
-                                    <Label Text="{Binding InitialIdentification }" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="1"/>
-                                    <Label Text="{Binding AnimalKingdom }" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="2"/>
-                                    <Label Text="{Binding AnimalClass}" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="3"/>
-                                    <Label Text="{Binding AnimalFamily }" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="4"/>
-                                    <Label Text="{Binding Genus}" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="5"/>
-                                    <Label Text="{Binding ScientificName }" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="6"/>
-                                    <Label Text="{Binding Taxonomy }" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="7"/>
-                                    <Label Text="{Binding Characteristics }" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="8"/>
-                                    <Label Text="{Binding Habitat}" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="9"/>
-                                    <Label Text="{Binding Threats}" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="10"/>
-                                    <Label Text="{Binding Conservation}" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="11"/>
+                                    <Label Text="Animal Code" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0" FontSize="Small"/>
+                                    <Label Text="Initial Identification " FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="1" Grid.Column="0" FontSize="Small"/>
+                                    <Label Text="Animal Kingdom " FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="2" Grid.Column="0" FontSize="Small"/>
+                                    <Label Text="Animal Class" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="3" Grid.Column="0" FontSize="Small"/>
+                                    <Label Text="Animal Family" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="4" Grid.Column="0" FontSize="Small"/>
+                                    <Label Text="Genus" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="5" Grid.Column="0" FontSize="Small"/>
+                                    <Label Text="Scientific Name " FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="6" Grid.Column="0" FontSize="Small"/>
+                                    <Label Text="Taxonomy " FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="7" Grid.Column="0" FontSize="Small"/>
+                                    <Label Text="Characteristics " FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="8" Grid.Column="0" FontSize="Small"/>
+                                    <Label Text="Habitat" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="9" Grid.Column="0" FontSize="Small"/>
+                                    <Label Text="Threats" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="10" Grid.Column="0" FontSize="Small"/>
+                                    <Label Text="Conservation" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="11" Grid.Column="0" FontSize="Small"/>
+
+                                    <Label Text="{Binding AnimalCode}" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="1" FontSize="Small"/>
+                                    <Label Text="{Binding InitialIdentification }" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="1" Grid.Column="1" FontSize="Small"/>
+                                    <Label Text="{Binding AnimalKingdom }" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="2" Grid.Column="1" FontSize="Small"/>
+                                    <Label Text="{Binding AnimalClass}" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="3" Grid.Column="1" FontSize="Small"/>
+                                    <Label Text="{Binding AnimalFamily }" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="4" Grid.Column="1" FontSize="Small"/>
+                                    <Label Text="{Binding Genus}" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="5" Grid.Column="5" FontSize="Small"/>
+                                    <Label Text="{Binding ScientificName }" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="6" Grid.Column="1" FontSize="Small"/>
+                                    <Label Text="{Binding Taxonomy }" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="7" Grid.Column="7" FontSize="Small"/>
+                                    <Label Text="{Binding Characteristics }" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="8" Grid.Column="1" FontSize="Small"/>
+                                    <Label Text="{Binding Habitat}" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="9" Grid.Column="1" FontSize="Small"/>
+                                    <Label Text="{Binding Threats}" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="10" Grid.Column="1" FontSize="Small"/>
+                                    <Label Text="{Binding Conservation}" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="11" Grid.Column="1" FontSize="Small"/>
                                 </Grid>
                             </Frame>
                         </ViewCell>

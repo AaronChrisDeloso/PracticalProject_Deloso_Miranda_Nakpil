@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticalProject.View.LoginPage" Title="Login Page" BackgroundImageSource="giraffe">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#ESBEE">
+
+            <BoxView Opacity="0.2" BackgroundColor="#00c2FF"/>
+            <Grid HeightRequest="520" Margin="30">
+                <Path Fill="White" StrokeThickness="1" Aspect="Uniform" HorizontalOptions="Center"
+                  Data="M30.6,172.838V696.314L348.157,426.72Z" Opacity="0.4"/>
+                <Path Fill="White" StrokeThickness="1" Aspect="Uniform" HorizontalOptions="Center"
+                  Data="M30.6,172.838V650.665L320.465,404.581Z" Opacity="0.8"/>
+                <Path Stroke="#00C2FF" StrokeThickness="1" Aspect="Uniform" HorizontalOptions="Center"
+                  Data="M30.6,172.838V605.512L293.073,382.682Z"/>
+                <StackLayout Spacing="20" VerticalOptions="CenterAndExpand" Margin="50,0">
+                    <Label Text="LOG IN" TextColor="Black" FontSize="20" FontAttributes="Bold" />
+                    <StackLayout Spacing="20">
+                        <Grid WidthRequest="200" Padding="0,0" BackgroundColor="Transparent" HorizontalOptions="Start">
+                            <Entry Placeholder="Username" FontSize="15"/>
+                        </Grid>
+                        <Grid WidthRequest="200" Padding="0,0" BackgroundColor="Transparent" HorizontalOptions="Start">
+                            <Entry Placeholder="Password" FontSize="15" IsPassword="True"/>
+                        </Grid>
+                    </StackLayout>
+                    <Button Text="Login" HorizontalOptions="Start" VerticalOptions="Center" Clicked="AddItemPage" CornerRadius="15" BackgroundColor="LightBlue"/>
+
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
