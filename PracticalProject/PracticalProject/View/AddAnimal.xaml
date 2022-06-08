@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticalProject.View.AddAnimal">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="txtAnimalCode" Placeholder="Enter Animal Kingdom"/>
+            <Entry x:Name="txtInitialIdentification" Placeholder="Enter Initial Identification"/>
+            <Entry x:Name="txtAnimalKingdom" Placeholder="Enter Animal Kingdom"/>
+            <Entry x:Name="txtAnimalClass" Placeholder="Enter Animal Class"/>
+            <Entry x:Name="txtAnimalFamily" Placeholder="Enter Animal Family"/>
+            <Entry x:Name="txtGenus" Placeholder="Enter Genus"/>
+            <Entry x:Name="txtScientificName" Placeholder="Enter Scientific Name"/>
+            <Entry x:Name="txtTaxonomy" Placeholder="Enter Taxonomy"/>
+            <Entry x:Name="txtCharacteristics" Placeholder="Enter Characteristics"/>
+            <Entry x:Name="txtHabitat" Placeholder="Enter Habitat"/>
+            <Entry x:Name="txtThreats" Placeholder="Enter Threats"/>
+            <Entry x:Name="txtConservation" Placeholder="Enter Conservation"/>
+            <Button Text="Save" Clicked="btnSaveUpdate_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
